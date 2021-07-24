@@ -1,49 +1,45 @@
-const { test } = require("mocha")
+const { test } = require('mocha')
 
-function validatePassword(password){
-const lowerCase = 'abcdefghijklmnopqrstuvwxyz'
-const upperCase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-const specialChar = '!@#$%^&*()<>?_+}{-=[]\|,./`~'
+function validatePassword(password) {
+  const lowerCase = 'abcdefghijklmnopqrstuvwxyz'
+  const upperCase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+  const specialChar = '!@#$%^&*()<>?_+}{-=[]\|,./`~'
+  const listNumbers = '0123456789'
 
-let checkLength = false
-let checkLowerCase = true
-let checkSpecialChar = true
-let checkUpperCase = true
+  let checkLength = false
+  let checkLowerCase = true
+  let checkSpecialChar = true
+  let checkUpperCase = true
+  let checkNumber = true
 
-function passwordLength(){
-if (password.length < 8) return checkLength
-}
+  function passwordLength() {
+    if (password.length < 8) {
+      // empty
+    }
+  }
 
-function passwordLowerCase(){
-if (password.includes(lowerCase)){
+  function passwordLowerCase(lowerCase) {
+    if (password.includes(checkLowerCase)) {
+      // empty
+    }
+  }
 
-    return checkLowerCase
-} 
-}
-// console.log = 
+  function passwordUpperCase(upperCase) {
+    if (password.includes(checkUpperCase)) {
+      // empty
+    }
+  }
+  function passwordSpecialChar(specialChar) {
+    if (password.includes(checkSpecialChar)) {
+    // empty
+    }
+  }
+  function passwordNumber(listNumbers) {
+    if (password.includes(checkNumber)) {
+    // empty
+    }
+  }
 
-function passwordUpperCase(){
-if (password.includes(upperCase)){
-
-    return checkUpperCase
-} 
-}
-function passwordSpecialChar(){
-if (password.includes(specialChar)){
-
-    return checkSpecialChar
-} 
-}
-
-//hold variable with answer true
-// 
-return checkLength && checkLowerCase && checkUpperCase && checkSpecialChar
+  return checkLength && checkLowerCase && checkUpperCase && checkSpecialChar && checkNumber
 }
 module.exports = validatePassword
-
-// arrayDiff(testArrayOne, testArrayTwo)
-// let thirdArrayAnswer = []
-
-// for (let i = 0; i < arrayDiff.length; i++)
-// if (testArrayOne[i] not in testArrayTwo)
-// thirdArrayAnswer.push(testArrayOne[i])
