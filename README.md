@@ -1,15 +1,18 @@
 # Password Validator
 
-## Instructions
-In the initial commit to this project, you have been provided with a basic project setup as well as a set of tests which currently fail. 
+When submitting your assignment, include answers to the following.
 
-Your task is to create a `validatePassword` function which will return true when the password given meets all the listed requirements listed below.
+# Identify the component of this assignment that you did the best on, and why.
+I think I did my best on the creating the functions for letters and special char validations. Because I was able to identify a way to decipher between upperase and lowercase as well as identify the special characters. 
 
-Working in a branch called `answer`, implement your function to get your tests to pass. Once you are done, push your branch up to GitHub, create a pull request, and request review from the instructor.
+# Describe in plain english what problem this assignment was posing, and what your solution was to it.
+The problem presented is to create validations for passwords and make sure the passwords have at least one number, one uppercase, one lowercase and one special character
 
-## Password Rules
-* Must be a minimum of 8 characters
-* Must contain at least one lower case letter
-* Must contain at least one upper case letter
-* Must contain at least one numeric value
-* Must contain at least one special character
+# What was your approach or process?
+My approach was to read the readme thoroughly and write out the requirements in comments and then start writing the code to fill in. 
+
+# What were your challenges?
+My biggest challenge was making my functions work. One of my functions does not work. Its the check for numeric value test, it didn't pass and I don't know why.
+
+# What resources did you use?
+w3schools, MDN and the google slides. I also sought some help from a peer. 
